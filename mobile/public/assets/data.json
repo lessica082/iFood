@@ -1,0 +1,57 @@
+[
+		{	
+			"dishId":1,
+			"dishname":"Sleeve-fish",
+			"dishstuff":"sleeve-fish, sesame, garlic",
+			"likesnumber":3,
+			"dishimage":"/assets/images/ika.jpg"
+		},
+		{	
+			"dishId":2,
+			"dishname":"Fish",
+			"dishstuff":"sleeve-fish, sesame, garlic",
+			"likesnumber":4,
+			"dishimage":"/assets/images/fish.jpg"
+		},
+		{	
+			"dishId":3,
+			"dishname":"Peiking Duck",
+			"dishstuff":"sleeve-fish, sesame, garlic",
+			"likesnumber":5,
+			"dishimage":"/assets/images/duck1.jpg"
+		}
+]
+{
+    "keyword": [
+        "cheesecake", 
+        "macaroon", 
+        "salmon", 
+        "beef", 
+        "pork", 
+        "fish", 
+        "turkey", 
+        "tofu", 
+        "carrot", 
+        "brocoli", 
+        "tomato", 
+        "Groovy", 
+        "letture", 
+        "duck", 
+        "asparagus", 
+        "pudding", 
+        "puff", 
+        "clam", 
+        "pumpkin", 
+        "Tomato", 
+        "Pork", 
+        "Pasta", 
+        "Sesame", 
+        "Grilled", 
+        "Grilled Pork", 
+        "Grilled Pork Loin", 
+        "Honey Chicken Kabobs", 
+        "Honey", 
+        "Garlic", 
+        "turkey"
+    ]
+}

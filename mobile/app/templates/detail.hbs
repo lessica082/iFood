@@ -1,0 +1,49 @@
+{{#with model}}
+<header id="food-name">
+	<h1>{{#link-to 'search'}}<span><</span>{{/link-to}}{{dishName}}</h1>
+</header>
+
+<div id="food-pic">
+	<img {{bind-attr src=imageUrl}} >
+</div>
+
+<div id="rating">
+	<p><span id='ratesNumber'>{{rateTimes}} Rates</span>{{star-rating clickable=false starRating=rate maxStars=5}}</p>
+</div>
+</br>
+<div id="content">
+	<h2>Ingredients :</h2>
+	<div id="food-list">
+		<div id="iname">	
+		{{#each ingredients}}
+		    <li>{{i-name}}</li>
+		{{/each}}
+		</div>
+		<div id="icount">
+			{{#each ingredients}}
+				<li>{{i-count}}</li>
+			{{/each}}
+		</div>
+	</div>	
+	<div id="step-layer">
+		<h3>Cooking Step :</h3>
+		<ol>
+		{{#each step}}
+		<li>{{step}}</li>
+		{{/each}}
+		</ol>
+    </div>
+</div>
+{{/with}}
+<div class="subContent">
+	{{#link-to 'list' class="viewComments"}}
+		<img src="/assets/comments.jpeg">{{commentNum}} Comments
+	{{/link-to}}
+	{{#link-to 'comments' class="reviews"}}
+		Have a comment?
+	{{/link-to}}
+	<div class="commentsArea">
+		{{outlet}}
+	</div>
+</div>
+

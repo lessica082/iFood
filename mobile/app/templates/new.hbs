@@ -1,0 +1,41 @@
+<header>
+	<h1>{{#link-to 'home'}}◀ Back{{/link-to}}
+	Add New Recipe	
+	<a {{action 'saveRecipe'}}>Save</a></h1>
+</header>
+<div id="edit">
+  <ul>
+    <li>
+      <label>Name</label>
+      {{input type="text" value=name class="name"}}
+    </li>
+    <li>
+      <label>Image Url</label>
+      {{input type="text" value=img  class="img"}}
+    </li> 
+    <li>
+      <label>Category</label></br>
+      <input type="radio" value="breakfast" class="category" name="category">breakfast</input>
+      <input type="radio" value="lunch" class="category" name="category">lunch</input>
+      <input type="radio" value="dinner" class="category" name="category">dinner</input>
+      <input type="radio" value="dessert" class="category" name="category">dessert</input><br>
+    </li>
+
+
+    <li>
+      <label>Ingredient</label>
+      <span>( example: pork , 1 pound )</span>
+      {{#each item in stuffInput}}
+        <input type="text" class="stuff"></input>
+      {{/each}}
+      <p id="add-stuff" {{action 'addStuff'}}>+ Add</p>
+    </li>
+    <li>
+      <label>Cooking Method</label>
+      {{#each item in stepInput}}
+        <textarea  class="step"></textarea>
+      {{/each}}
+      <p id="add-step" {{action 'addStep'}}>+ Add</p>
+    </li>  
+  </ul>
+</div>

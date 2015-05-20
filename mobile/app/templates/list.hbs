@@ -1,0 +1,16 @@
+{{#if model}}
+	{{#each}}
+		<div class="userdetail">
+		 <span>
+		 <span><strong>{{userName}}</strong></span> <span style="margin-left: 2%;">{{date}}</span>
+		 </span>
+		 <br>
+		 {{star-rating starRating=rate maxStars=5}}
+		 <br>
+		 <span>{{content}}</span>
+	</div>
+	{{/each}}
+{{else}}
+	<p id="ifNoComment">There is no comments now!</p>
+{{/if}}
+

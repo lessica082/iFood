@@ -1,0 +1,42 @@
+<div class="search-rec">
+  <ul class="hotsearch">
+    <li>
+      <span>&bull;</span>
+      {{#link-to 'search' (query-params category="breakfast" keyword='')}}
+         Breakfast
+      {{/link-to}}
+    </li>
+    <li>
+      <span>&bull;</span>
+      {{#link-to 'search' (query-params category="lunch" keyword='')}}
+         Lunch
+      {{/link-to}}
+    </li>
+    <li>
+      <span>&bull;</span>
+      {{#link-to 'search' (query-params category="dinner" keyword='')}}
+         Dinner
+      {{/link-to}}
+    </li>
+    <li>
+      <span>&bull;</span>
+      {{#link-to 'search' (query-params category="dissert" keyword='')}}
+         Dessert
+      {{/link-to}}
+    </li>
+  </ul>
+</div>
+{{flex-slider sliders=slidesData}}
+   <br/>
+   <div id="category">
+     <ul>
+        {{#each list}}
+        <li>
+        {{#link-to 'category' (query-params categoryId=id)}}
+        {{id}}
+        {{/link-to}}
+        </li>
+        {{/each}}
+      </ul>
+  </div>
+  {{outlet}}
